@@ -1,0 +1,25 @@
+.Picture {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Picture::after {
+    display: block;
+    content: "";
+    padding-bottom: 75%;
+}
+
+.Picture img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Picture::after {
+        padding-bottom: 56.25%;
+    }
+}
